@@ -1,0 +1,388 @@
+.cart_first_product{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    background-color: #198754;
+    justify-content: space-evenly;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cart_Image_image{
+    width: 40px;
+    height: 40px;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0rem 0.1rem white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.cart_quantity{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0rem;
+    
+}
+
+
+.cart_quantity span{
+    font-size: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: inherit;
+    width: 20px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: none;
+    border-width: 0;
+}
+
+
+
+.ADD_backgroun_color{
+    box-shadow: 0rem 0rem 0.1rem #198754;
+   
+    border: none;
+    outline: none;
+    padding: 0rem;
+}
+
+
+/* CHeck ut*/
+
+.check_price_cart{
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    margin: 0rem;
+    border-radius: 5rem;
+    position: relative;
+    height: auto;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    
+
+}
+.total_check_price{
+    margin-bottom: 1rem;
+}
+.total_check_price h1::first-letter{
+    color: #ff000094;
+}
+.total_check_price h1{
+    text-align: left;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-family: monospace;
+
+
+}
+
+.total_check_price p{
+    text-align: left;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: inherit;
+    margin-left: 1rem;
+}
+
+.check_ut_Cart{
+
+    width: 90%;
+    margin: 0rem auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: #198754;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: 13px;
+    
+    height: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: 0.9s;
+    transform-style: preserve-3d;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    
+}
+
+.Remove_Cart{
+    width: 100px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    line-height: 25px;
+    transition: .5s;
+    font-size: 13px;
+    background-color: #198754;
+
+    
+}.Remove_Cart:hover{
+    opacity: 0.8;
+}
+
+.add_width_cart{
+    width: 150px;
+    
+}
+
+.Recommended_cart{
+    width: 100%;
+    display: block;
+    margin: 0rem auto;
+    padding: 0rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Otomanopee One';
+    color: #198754;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.add_heigth_box{
+    height: 160px;
+}
+
+.Conllection_full{
+    width: 200px;
+    display: block;
+    margin: 0rem auto;
+    padding: 0rem;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin-top: 2rem;
+    background-color: #198754;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+
+}.Conllection_full:hover{
+    opacity: 0.9;
+}
+
+
+
+.add_center{
+    text-align: center;
+    display: block;
+}
+
+.Add_color_shipping{
+    color: white;
+}
+
+
+.table>:not(caption)>*>* {
+     
+     background-color: white; 
+    /* border-bottom-width: 1px; */
+    /* box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); */
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+     --bs-table-accent-bg: white; 
+    /* color: var(--bs-table-striped-color); */
+}
+.table-hover>tbody>tr:hover {
+ --bs-table-accent-bg:  white; 
+    /* color: var(--bs-table-hover-color); */
+}
+
+
+td span{
+    font-size: 12px;
+    padding: 0rem;
+    text-transform: capitalize;
+}
+
+/*  fix cart shipping*/
+
+.Cart_postion{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.cart_body_Price_add{
+    font-size: 14px;
+    background: #198754;
+    width: 80px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    opacity: 0.9;
+    left: 0.5rem;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    z-index: 3;
+    transform-style: preserve-3d;
+    transition: .6s;
+}
+
+.add_cart_icons
+{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    color: #198754;
+    font-size: 23px;
+    font-weight: unset;
+    cursor: pointer;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    z-index: 436456;
+}
+.add_cart_icons:hover
+{
+    transform: rotate(
+-10deg
+);
+}
+
+.cart_body_Price_add:hover{
+    transform: translate(-10px);
+}
+
+.add_center h1{
+    text-align: left;
+    margin-left: 1rem;
+}
+
+
+.Add_Color_current{
+ 
+    background-color: #198754;
+    text-align: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+}
+
+
+
+.Change_width{
+    width: 40px;
+    display: flex;
+    justify-items: center;
+    font-size: 14px;
+    justify-content: center;
+    height: 35px;
+   
+}.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0rem 0rem 0.1rem  transparent;
+}
+
+
+.div_go_back{
+    font-size: 20px;
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 150px;
+    border-radius: 0.5rem;
+    font-family: 'Otomanopee One';
+}
+
+.link_go_back{
+
+    text-decoration: none;
+    background-color: #198754;
+    color: white;
+    font-size: 13px;
+    width: 80px;
+    height: 30px;
+    
+    border-radius: 0.4rem;
+    font-family: monospace;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 0.5rem;
+
+}.link_go_back:hover{
+    color: white;
+    opacity: 0.7;
+}
+
+.x_zindex{
+z-index: 155555555555555555555555555555555555555555555555555;
+}
+.react-datepicker-popper {
+    z-index: 455555555555555555555555;
+}
+
+
+.cart_login_s{
+
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.712);
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: 4565;
+    transform: scale(0);
+    transition: opacity .4s ease, visibility .4s ease, transform .4s easw-in-out;
+    justify-content: center;
+
+}
+
+.cart_login_s.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 45555555555555555555555555;
+   
+}
+
+.Link_cart_click{
+    text-decoration: none;
+    color: white;
+}.Link_cart_click:hover{
+    color: white;
+}

@@ -1,0 +1,23 @@
+.add_style{
+    border-left: 1px solid red;
+    border-right: 1px solid black;
+}
+
+.Delivered{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: inherit;
+    margin-bottom: 0.5rem;
+}
+.Delivered i
+{
+    font-size: 14px;
+    color: #198754;
+    width: 25px;
+}
+
+.await_delivered{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}

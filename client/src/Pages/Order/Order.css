@@ -1,0 +1,222 @@
+.xp_order{
+    
+    padding: 0.7rem;
+    
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+ 
+      border: 1px solid #198754;
+      border-bottom: 1px solid #198754;
+      border-right: 1px solid #198754;
+   
+}
+
+.Remove_order_user{
+    color: #198754;
+    cursor: pointer;
+    position: relative;
+   
+}.Remove_order_user i{
+    position: absolute;
+    right: 1rem;
+    font-size: 17px;
+    opacity: 0.7;
+    transition: all 0.20s;
+}.Remove_order_user i:hover{
+    opacity: 1;
+}
+
+.xp_order{
+    margin-top: 0.3rem;
+}
+.my_addres_info_bil{
+    text-transform: capitalize;
+    font-size: 13px;
+    background-color: #198754;
+    width: 250px;
+    padding: 0.5rem;
+    font-family: revert;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem #1987548c;
+    cursor: pointer;
+    font-weight: normal;
+}
+.my_addres_info_bil i {
+    font-size: 14px;
+    
+    width: 25px;
+}
+.my_order_now
+{
+    font-size: 19px;
+    background: #198754;
+    color: white;
+    font-family: 'Otomanopee One';
+    padding: 1rem;
+    width: 150px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.time_buy{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+
+}.time_buy i{
+    font-size: 14px;
+    color: #198754;
+    width: 25px;
+}
+
+.Order_List_list h1{
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+
+
+.Order_List_list_color{
+    background-color: #198754;
+    color: white;
+    font-size: 16px;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 400;
+    margin-left: 0.4rem;
+
+}
+.order_payment{
+    text-transform: capitalize;
+    width: 100%;
+    padding: 0rem;
+    border-bottom: 1px solid #198754;
+    padding: 1rem;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+   
+    font-family: 'Otomanopee One';
+    margin-bottom: 2rem;
+   
+}
+.order_payment::first-letter
+
+{
+    color: #198754;
+    font-size: 15px;
+}
+.time_boking_info_info_time::first-letter{
+    color: #198754;
+    font-size: 15px;
+}
+.method_payment{
+    margin-left: 0.5rem;
+    font-size: 14px;
+}
+.credit_card{
+    color: #198754;
+    margin-left: 0.5rem;
+    font-size: 14px;
+}
+
+
+.Order_List_Order_Info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #198754;
+
+}
+.items_oreder_info_Image{
+    width: 40px;
+    height: 40px;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    opacity: 1;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+   
+}
+.items_oreder_info{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: revert;
+}
+
+.items_oreder_info span{
+  border: none;
+    border-radius: 0.4rem;
+    font-size: 14px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    line-height: 0.2rem;
+    margin-right: 0.3rem;
+    text-transform: capitalize;
+    font-family: monospace;
+ 
+   
+}
+
+
+.MyAddress_Info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: inherit;
+    border-bottom: 1px solid #198754;
+}
+.MyAddress_Info_info
+{
+    font-family: inherit;
+}
+
+.MyAddress_Info_info i {
+    font-size: 14px;
+    color: #198754;
+    width: 25px;
+}
+
+.items_total_info{
+    flex-direction: row-reverse;
+    display: flex;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: revert;
+    margin-bottom: 0.4rem;
+}
+
+.Add_last{
+    background-color: #198754;
+    width: 80px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    
+}

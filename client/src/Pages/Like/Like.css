@@ -1,0 +1,99 @@
+
+.bottom_cart{
+    margin-bottom: 0.5rem;
+}
+.Add_Remove_Like{
+    color: #198754;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: all 0.20s;
+    opacity: 0.6;
+}.Add_Remove_Like:hover{
+    opacity: 1;
+}
+.like_PageHome{
+    font-family: 'Otomanopee One';
+    
+}.like_PageHome .add_back,.like_PageHome i {
+    color: white;
+    background-color: #198754;
+    padding: 0.3rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.1rem;
+    margin-top: 0.3rem;
+}
+.Image_like{
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.40s;
+    cursor: pointer;
+}
+
+.price_like{
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+    background-color: #198754;
+    padding: 0.4rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+   
+    font-family: inherit;
+    border-radius: 0.4rem;
+    width: 100px;
+    text-align: center;
+    transition: all 0.50s;
+    opacity: 0.8;
+    box-shadow: 0rem 0rem 0.1rem 0rem #04eb7f;
+}.price_like:hover{
+    opacity: 1;
+}
+
+.add_cart_like{
+    bottom: 0rem;
+    position: absolute;
+    right: 0rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #198754;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.add_cart_like i{
+    
+    font-size: 15px;
+    transform-style: preserve-3d;
+    transition: .6s;
+
+}.add_cart_like i:hover{
+    
+    transform:rotate(120deg);
+
+}
+
+
+.bottom_x{
+    margin-bottom: 12rem;
+}
+
+.text_posx{
+    height: 100px;
+    overflow: hidden;
+    text-transform: capitalize;
+    overflow-y: auto;
+}

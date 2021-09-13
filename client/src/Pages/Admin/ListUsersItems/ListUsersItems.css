@@ -1,0 +1,27 @@
+.CheckOut_first{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.CheckOut{
+    background-color: #198754;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+        outline: none;
+        border: none;
+    transition: all 0.2s;
+
+}.CheckOut.color{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.CheckOut_text{
+
+ margin-left: 0.5rem;
+ text-transform: capitalize;
+ font-size: 14px;
+}

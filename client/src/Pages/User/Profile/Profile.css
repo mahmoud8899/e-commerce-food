@@ -1,0 +1,261 @@
+
+.col_order_bacgroun{
+    margin: 0.4rem auto;
+}
+
+
+
+.Profile_User{
+    display: block;
+    margin: 0rem auto;
+    padding: 0rem;
+    border-radius: 0rem;
+    outline: none;
+    text-transform: capitalize;
+}
+
+
+
+
+.Order_List_User_Info h1{
+    font-family: cursive;
+    color: #198754;
+}
+.List_user_profil{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    
+    padding: 0rem;
+    flex-wrap: wrap;
+        
+}
+.List_user_profil li {
+    border-radius: 0.4rem;
+    color: #198754;
+    height: 2rem;
+    line-height: 2rem;
+    width: 250px;
+    text-align: center;
+    margin: 0.2rem auto;
+    font-family: monospace;
+    font-size: 12px;
+    box-shadow: 0rem 0rem 0.1rem #11d67b;
+    cursor: pointer;
+}
+
+.List_user_profil li .add_color_style{
+    color: black;
+}
+
+
+.first_Order{
+    background-color: rgb(238 238 238 / 39%);
+    box-shadow: 0rem 0rem 0.1rem 0rem black;
+    border-radius: 0.2rem;
+    opacity: 0.8;
+    transition: .3s;
+    width: 100%;
+    padding: 0.2rem;
+}
+.first_Order:hover{
+    opacity: 1;
+}
+.Order_List_list{
+    padding: 0rem ;
+    margin: 0rem auto;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Order_List_list h1{
+    font-size: 13px;
+    font-family: cursive;
+    padding: 0rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: block;
+    
+ }
+.Order_List_list p{
+    font-size: 13px;
+    padding: 0rem;
+    width: 100%;
+    display: block;
+    margin: 0rem auto;
+}
+
+.Order_List_Order{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  
+}
+.Order_List_Order_Image{
+    width: 50px;
+    height:  50px;
+    margin: 0rem;
+    padding: 0rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    transform-style:preserve-3d;
+    transition: .6s;
+}.Order_List_Order_Image:hover{
+    transform: scale(1.2);
+}
+.Order_List_Order_Info{
+   
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: inherit;
+    width: auto;
+    justify-content: center;
+
+}
+
+.order__qty_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    align-items: center;
+}
+.items__total{
+    border-top: 1px solid #ff000094;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+.Add_open_Adress{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    transition: opacity .4s ease, visibility .4s ease, transform .4s easw-in-out;
+    background-color: rgba(0, 0, 0, 0.445);
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 34534543;
+    visibility: hidden;
+    flex-direction: column;
+}
+
+.Add_open_Adress.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Add_change_adress{
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    margin: 0rem auto;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.test_code{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+    padding: 0rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    position: relative;
+    box-shadow: 0rem 0rem 0.1rem #ff000094;
+    cursor: pointer;
+}
+
+.close_items{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .6s;
+    border-radius: 10%;
+    background-color: #ff000094;
+    width: 25px;
+    height: 25px;
+    color: white;
+    
+    box-shadow: 0.1rem 0.1rem  0rem 0rem ;
+    transform-style: preserve-3d;
+    text-align: center;
+}.close_items:hover{
+    opacity: 1;
+    transform: rotate(10deg);
+}
+
+.Form_Address{
+    margin-top: 4rem;
+
+}
+
+
+.Add_with_width{
+    width: 250px;
+   
+    
+}
+.Address_My{
+    font-size: 20px;
+    color: #198754;
+    border-bottom: 0.1rem solid #198754;
+    padding: 0.6rem;
+    font-family: monospace;
+    text-transform: capitalize;
+    transform-style: preserve-3d;
+    transition: .6s;
+    cursor: pointer;
+    width: 150px;
+}.Address_My:hover{
+    transform: translate(-20px);
+    
+}
+
+
+
+.Billing_Address .form-label {
+    margin-bottom: .5rem;
+    font-size: 14px;
+    font-family: monospace;
+    color: brown;
+    text-transform: capitalize;
+}
+.Billing_Address .form-label::first-letter{
+    color: red;
+}
+.Link_Home{
+    text-decoration: none;
+    color: black;
+}
+
+
+.List_user_profil li span{
+    color: #ff000094;
+    margin-left: 0.4rem;
+}

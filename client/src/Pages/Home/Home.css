@@ -1,0 +1,38 @@
+
+.Home_container_first{
+    width: 96%;
+    margin: 0rem auto;
+    display: block;
+    
+    padding: 0rem;
+    
+}
+
+
+.class_ONscroll{
+    position: fixed;
+    bottom: 4rem;
+    right: -10rem;
+  
+}
+.class_ONscroll.add_scroll{
+    right: 1rem;
+}
+
+.class_ONscroll i{
+    background-color: #ff000094;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 0.2rem black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 14px;
+    color: white;
+    transition: .6s;
+    transform-style: preserve-3d;
+    
+}.class_ONscroll i:hover{
+    transform: rotate(20deg);
+    opacity: 0.8;
+}

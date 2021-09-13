@@ -1,0 +1,388 @@
+.navBar_Shipping{
+
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    color: black;
+    
+}
+.navBar_Shipping h1::first-letter{
+
+    color: #198754;
+}
+.link_order{
+    color: white;
+    text-decoration: none;
+}.link_order:hover{
+    color: white;
+}
+.navBar_Shipping h1{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.navBar_Shipping i{
+    color: #198754;
+    margin-left: 0.5rem;
+}
+
+.gold_shipping{
+    color: #198754;
+    margin-left: 0.5rem;
+}
+.navBar_Shipping a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.first_class_info_user{
+    border-radius: 0.4rem;
+    border: 1px solid #198754;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.check_user_agree{
+
+    display: flex;
+    align-items: center;
+}
+
+.router_first_Adress{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    background-color:#198754;
+    box-shadow: 0rem 0rem 0.1rem white;
+    outline: none;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+    line-height: 1.2rem;
+    font-size: 12px;
+}
+.router_login{
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+}
+
+.check_user_agree i{
+    font-size: 14px;
+    margin-left: 1rem;
+    color: #198754;
+}
+
+
+.user_info_name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 15px;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+                  
+.Change_Edit{
+    width: 100px;
+    height: 30px;
+    background-color: #198754;
+    text-align: center;
+    line-height: 30px;
+    text-transform: capitalize;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0.1rem 0.1rem white;
+   
+    transition: .5s;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+   
+    color: white;
+    font-size: 13px;
+   
+
+}
+
+.telefon_style{
+    margin-left: 1rem;
+}
+
+
+/* shipping address */
+.first_Shiooing_address{
+    border-radius: 0.4rem;
+    border: 1px solid #198754;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.first_Shiooing_address_adress{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 15px;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+.Payment_method{
+    border-radius: 0.4rem;
+    border: 1px solid #ff6b6b;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.1rem #ff6b6b;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Payment_method_text{
+    background-color: #198754;
+    border-radius: 0.4rem;
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.4rem rgba(238, 238, 238, 0.808);
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: white;
+}
+
+.Payment_method_text span{
+margin-left: 1rem;
+}
+
+.Payment_Credit_Image{
+    margin: 0rem;
+    padding: 0rem;
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.Payment_Credit_Image .router_first{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #198754;
+    box-shadow: 0rem 0rem 0.1rem white;
+    outline: none;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+    line-height: 1.2rem;
+    font-size: 12px;
+
+}.Payment_Credit_Image .router_first:hover{
+    opacity: 1;
+}
+.Payment_Credit_Image i{
+    width: 30px;
+    height: 30px;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    line-height: 30px;
+    text-align: center;
+}
+
+.Payment_Credit_Image .check_cart_span{
+    margin-left: 1rem;
+}
+
+/* Form cart*/
+.Form_cart_input{
+    margin-top: 1rem;
+}
+.Enter__cart{
+    font-size: 13px;
+
+}
+
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+   
+}
+
+/*
+background: #ff6b6b;
+*/
+
+.add_botton{
+    margin-top: 1rem;
+    background-color: #198754;
+    width: 150px;
+    height: 1.9rem;
+    border-radius: 0.3rem;
+    line-height: 1.9rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.btn-check:active+.btn-primary, 
+.btn-check:checked+.btn-primary, 
+.btn-primary.active, .btn-primary:active,
+ .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-check:active+.btn-primary:focus, 
+.btn-check:checked+.btn-primary:focus, 
+.btn-primary.active:focus, 
+.btn-primary:active:focus,
+ .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0rem 0rem 0rem white;
+}
+
+
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color:#198754;
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem white;
+}
+
+
+
+/*
+ start your order
+*/
+
+.Your_Order{
+    border-radius: 0.4rem;
+    border: 1px solid #198754;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+.Your_Order h1{
+    font-size: 20px;
+    font-family: emoji;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: #198754;
+}
+
+.List_Oder_Image_with_price{
+    padding: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top: 1px solid #eee;
+    padding: 0.3rem;
+}
+.remove_items{
+   
+    margin-left: auto;
+    cursor: pointer;
+    text-align: center;
+   
+}.remove_items i {
+    color: #198754;
+    font-size: 21px;
+}.remove_items i:hover{
+    opacity: 0.7;
+}
+.price_and_text{
+margin-left: 1rem;
+display: flex;
+flex-direction: column;
+}
+.Oder_Image_allt{
+    width: 60px;
+    height: 60px;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+}
+
+.Pric_Delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    
+    padding: 0.3rem;
+}
+
+.Pric_Total{
+    background-color: #198754;
+    border-radius: 0.4rem;
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.4rem rgb(238 238 238 / 81%);
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}

@@ -1,0 +1,217 @@
+.product_Image_left{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.product_Image_left_Image{
+    width: 100%;
+    height: 150px;
+    margin: 0rem auto;
+    margin-bottom: 0.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0.1rem 0.1rem black;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.product_Image_One{
+
+width: 100%;
+height: 400px;
+margin: 0rem auto;
+display: block;
+padding: 0rem;
+overflow: hidden;
+}
+.product_Image_One_Image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    opacity: 0.9;
+    
+    
+    outline: none;
+    border: none;
+    transition: .5s;
+    transform-style: preserve-3d;
+    transition: 1.20s ease-in-out;
+    cursor: all-scroll;
+}.product_Image_One_Image:hover{
+    transform: scale(1.9);
+}
+
+.Selector_Product{
+    
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+  
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+}
+
+
+
+.input_selector{
+
+    width: 80%;
+    height: 2rem;
+    
+    display: block;
+    margin-bottom: 3rem;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #198754;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    
+}
+
+.Logoin_user
+{
+    margin-top: 4rem;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}.Logoin_user::first-letter{
+    color: #198754;
+}
+.Logoin_user a{
+    margin-left: 0.5rem;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: white;
+    width: 97px;
+    background-color: #198754;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+.top_commit_xp{
+    
+    margin-top: 2rem;
+    padding: 0.2rem;
+}
+.time_commit {
+    width: 100%;
+    display: block;
+    padding: 0rem;
+    margin: 0rem;
+    
+    text-shadow: 0rem 0rem 0rem 0rem;
+    margin-left: auto;
+    text-align: right;
+    padding: 0rem;
+    margin: 0rem auto;
+}
+.Comment_User_Info{
+    width: 100%;
+    display: flex;
+  
+}
+.Comment_User_Info span::first-letter{
+    color: black;
+}
+.Comment_User_Info span{
+  color: #198754;
+    text-transform: capitalize;
+    font-size: 15px;
+  
+  
+}
+.Comment_User_Info .cart_Iconas_Start
+{
+    margin-left: 1rem;
+    
+}
+.user_text_comment{
+    background-color: #198754c0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: left;
+    text-shadow: 0rem 0rem 0.1rem #198754;
+    cursor: pointer;
+    opacity: 0.9;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+
+.input_selector_user{
+    width: 100%;
+    height: 2rem;
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #198754;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0rem 0rem 0.1rem #198754;
+    text-transform: capitalize;
+    font-family: monospace;
+}.input_selector_user option{
+    text-transform: capitalize;
+}
+
+.add_width{
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.textarea.form-control:hover{
+    background-color: black;
+}
+
+.name_menay{
+    text-transform: capitalize;
+    width: 100%;
+    height: auto;
+    padding: 0rem;
+    display: block;
+    
+    font-family: 'Otomanopee One';
+    text-transform: capitalize;
+    cursor: pointer;
+    text-shadow: 0rem 0rem 0.1rem #198754;;
+
+}
+
+.Back_Home{
+    background-color: #198754;
+    width: 120px;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    
+}.Back_Home .Back_Home_A{
+    color: white;
+}
+
+.Back_Home .Back_Home_A i{
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.width_more{
+    height: 100px;
+}

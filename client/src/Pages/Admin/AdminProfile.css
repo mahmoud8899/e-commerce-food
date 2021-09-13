@@ -1,0 +1,37 @@
+
+
+.add_font{
+    font-size: 13px;
+}
+
+
+.create_Product{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.2rem red;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+.create_Product h1{
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+    padding: 0rem;
+    margin: 0rem auto;
+}
+
+.pet-select{
+    border-color: #198754;
+    padding-right: calc(1.5em + .75rem);
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+    height: 2rem;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}

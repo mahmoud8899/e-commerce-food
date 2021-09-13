@@ -1,0 +1,56 @@
+
+
+
+.Add_singup_redirest{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 2px dotted black;
+    box-shadow: 0.1rem 0rem 0.5rem 0rem #198754;
+    
+}
+
+
+.Add_singup_redirest h1{
+    font-size: 18px;
+}
+
+.Add_singup_redirest h1::first-letter{
+    color: #198754;
+}
+
+.Add_container_box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Add_container_box_text{
+    font-size: 12px;
+    width: 62%;
+    padding: 0rem;
+    margin: 0rem;
+    text-transform: capitalize;
+}
+.Add_container_box_singup{
+    margin-left: auto;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: center;
+    background: #198754;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.sing_up_link{
+    text-decoration: none;
+    color: white;
+}.sing_up_link:hover{
+    color: white;
+}

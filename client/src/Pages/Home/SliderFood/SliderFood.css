@@ -1,0 +1,133 @@
+/* Slider */
+.link_product{
+    text-decoration: none;
+    z-index: 45;
+}
+
+.fa-arrow-left.add_color_null{
+    font-size: 20px;
+    color:#19875436;
+    pointer-events: none;
+    
+}
+
+.fa-arrow-right.add_color_null{
+    font-size: 20px;
+    color:#1987543a;
+    pointer-events: none;
+}
+
+.Top_sLIDER_Image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.Top_sLIDER_Image h1{
+    color: #198754;
+    font-size: 23px;
+    text-transform: capitalize;
+
+}
+.Top_sLIDER_Image_next i{
+    font-size: 20px;
+    color: #198754;
+    cursor: pointer;
+
+}.Top_sLIDER_Image_next i:hover{
+    opacity: 0.7;
+}
+.Top_sLIDER_Image_next{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+
+
+.Cart_slider_cart{
+   
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 1rem;
+    
+   
+
+}
+
+.Cart_slider_Image{
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.2rem black;
+    outline: none;
+    cursor: pointer;
+ 
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transform-style: preserve-3d;
+    transition: .6s;
+   
+}.Cart_slider_Image:hover{
+    transform: scale(1.2);
+}
+
+.info_text_and_add{
+    background-color: #198754;
+    padding: 0.5rem;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    right: -0.5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    bottom: 0rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.1rem black;
+    transition: .6s;
+
+
+}.info_text_and_add:hover{
+    right: 1.5rem;
+}
+
+.info_text_and_add span{
+ margin-left: 1.9rem;
+
+}
+
+.Icons_Add_Cart{
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border:none;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    transform-style: preserve-3d;
+    transition: .6s;
+    color: black;
+   
+}.Icons_Add_Cart:hover{
+    transform: rotate(120deg);
+    box-shadow: 0rem 0rem 0.1rem black;
+    opacity: 0.7;
+}
+
+.botton_xp{
+  
+    margin-bottom: 4rem;
+}

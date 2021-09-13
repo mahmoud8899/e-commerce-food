@@ -1,0 +1,124 @@
+.container_color_footer{
+    color: black;
+    margin-top: 4rem;
+    text-transform: capitalize;
+
+}
+
+.container_color_footer_h1{
+    color: #198754;
+    font-size: 14px;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    font-weight: normal;
+    
+}
+
+.container_color_footer_About{
+    font-size: 14px;
+    
+    margin-top: 1rem;
+    padding: 0rem;
+}
+
+.Icons_row{
+    display: flex;
+    
+    width: 100%;
+    margin: 0.1rem auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem;
+    
+
+}
+.Icons_row i{
+    color: white;
+    background-color:#198754;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    outline: none;
+    box-shadow: 0rem 0rem 0.1rem black;
+    opacity: 0.9;
+    transform-style: preserve-3d;
+    transition: .6s;
+    display: block;
+    padding: 0rem;
+}
+
+.router_all_icons{
+  
+  width: 90%;
+  display: block;
+  padding: 0rem;
+  margin-left: 1rem;
+  font-size: 12px;
+}
+
+.search_more_icons{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    
+}
+.footer_first_class{
+    margin-bottom: 1rem;
+}
+.Footer_onder{
+    border-top: 1px solid #198754;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0rem auto; 
+}
+.buuton_color_boot{
+    background-color: #198754;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 2rem;
+    color: white;
+    font-size: 14px;
+}.buuton_color_boot:hover,:focus{
+    opacity: 0.8;
+}
+.icons_alle{
+display: flex;
+width: auto;
+height: auto;
+align-items: center;
+margin-top:1rem;
+}
+.reutor_icons{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #198754;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 0.4rem;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .6s;
+}.reutor_icons:hover{
+    opacity: 0.8;
+}
+
+.icons_foller span{
+    font-size: 11px;
+}
+
+.font_size_all{
+    font-size: 14px;
+    font-family: inherit;
+}
