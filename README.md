@@ -4,7 +4,7 @@ like
 =====================================================
 https://uppsala-mat.herokuapp.com/
 ======================================================
-Ful Javascript...............
+Full Javascript...............
 Node js 
 React js 
 Soket.io
