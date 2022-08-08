@@ -2,7 +2,7 @@ Food Mat.....
 
 like 
 =====================================================
-https://uppsala-mat.herokuapp.com/
+https://food-uppsala.herokuapp.com/
 ======================================================
 Full Javascript...............
 Node js 
