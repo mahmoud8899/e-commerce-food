@@ -4,8 +4,12 @@ import React, {  useState } from "react"
 import {Link} from "react-router-dom"
 import { AddCart_Action } from "../../../redux/Action/Cart"
 import { useDispatch } from "react-redux"
-const SliderFood = ({ post }) => {
+import {ImageUrl, TheSlice} from '../../../Utils/Url'
 
+
+
+const SliderFood = (props) => {
+const { post } = props
 
      const qty = Number(1)
      const dispatch = useDispatch()
@@ -56,6 +60,10 @@ const SliderFood = ({ post }) => {
         
      }
 
+
+
+
+
     return (
         <Container>
 
@@ -78,15 +86,15 @@ const SliderFood = ({ post }) => {
                     <Col xs={6} md={4} lg={3} key={sliderIndex} >
                         <div className="Cart_slider_cart">
                           <Link to={`/product/${slider?._id}`} className="link_product">
-                          <Image src={`/${slider?.image?.[0]}`} className="Cart_slider_Image" alt="" />
+                          <Image src={`${ImageUrl}${slider?.image}`} className="Cart_slider_Image" alt="" />
                           </Link>
 
                             <div className="info_text_and_add">
-                                <span>{slider?.name}</span>
-                                <span>{slider.prics} Kr</span>
+                                <span>{TheSlice(slider?.name)}</span>
+                                <span>{slider.prices} Kr</span>
 
-                                <div className="Icons_Add_Cart" onClick={(e)=> HandleAddTOcart(e,slider?._id)}>
-                                    <i class="fas fa-plus"></i>
+                                <div className="Icons_Add_Cart" onClick={(e)=> HandleAddTOcart(e,slider)}>
+                                    <i className="fas fa-plus"></i>
 
                                 </div>
 

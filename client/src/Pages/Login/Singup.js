@@ -10,7 +10,13 @@ import { Fragment } from "react"
 const SingUp = ({ history }) => {
 
 
-    const [dataLogin, setDataLogin] = useState({ username: '', email: '', password: '' })
+    const [dataLogin, setDataLogin] = useState({
+        email: '',
+        firstname: '',
+        lastname: '',
+        password: "",
+        telephone: '',
+    })
     const [loginSet, setLoginSet] = useState(false)
     const [now, setNow] = useState(20)
     const dispatch = useDispatch()
@@ -19,7 +25,7 @@ const SingUp = ({ history }) => {
     const userLogin = useSelector((state) => state.userLogin)
     const { userInfo } = userLogin
 
-  
+
 
 
 
@@ -53,7 +59,7 @@ const SingUp = ({ history }) => {
 
         }
 
-    }, [userInfo, history, loginSet, now, dataLogin,dispatch])
+    }, [userInfo, history, loginSet, now, dataLogin, dispatch])
 
     const [validated, setValidated] = useState(false);
     const HandleLogin = (event) => {
@@ -101,6 +107,37 @@ const SingUp = ({ history }) => {
 
 
                         <Form validated={validated} onSubmit={(e) => HandleLogin(e)}>
+                
+                            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                                <Form.Label column sm={2}>
+                                    first name
+                                </Form.Label>
+                                <Col sm={10}>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="first name"
+                                        required
+                                        onChange={(e) => setDataLogin({ ...dataLogin, firstname: e.target.value })} />
+                                </Col>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid username.
+                                </Form.Control.Feedback>
+                            </Form.Group>
+
+
+                            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                                <Form.Label column sm={2}>
+                                    last name
+                                </Form.Label>
+                                <Col sm={10}>
+                                    <Form.Control type="text" placeholder="last name" required onChange={(e) => setDataLogin({ ...dataLogin, lastname: e.target.value })} />
+                                </Col>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid username.
+                                </Form.Control.Feedback>
+                            </Form.Group>
+
+                            
                             <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                                 <Form.Label column sm={2}>
                                     Email
@@ -115,13 +152,14 @@ const SingUp = ({ history }) => {
 
                             <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                                 <Form.Label column sm={2}>
-                                    Username
+                                telephone number
                                 </Form.Label>
                                 <Col sm={10}>
-                                    <Form.Control type="text" placeholder="Username" required onChange={(e) => setDataLogin({ ...dataLogin, username: e.target.value })} />
+                                    <Form.Control type="number" 
+                                    placeholder="your phone number" required onChange={(e) => setDataLogin({ ...dataLogin, telephone: e.target.value })} />
                                 </Col>
                                 <Form.Control.Feedback type="invalid">
-                                    Please provide a valid username.
+                                    Please provide a valid email.
                                 </Form.Control.Feedback>
                             </Form.Group>
 
@@ -131,7 +169,8 @@ const SingUp = ({ history }) => {
                                     Password
                                 </Form.Label>
                                 <Col sm={10}>
-                                    <Form.Control type="password" placeholder="Password" required onChange={(e) => setDataLogin({ ...dataLogin, password: e.target.value })} />
+                                    <Form.Control type="password" placeholder="Password" 
+                                    required onChange={(e) => setDataLogin({ ...dataLogin, password: e.target.value })} />
                                 </Col>
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid Password.

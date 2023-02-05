@@ -25,7 +25,7 @@ const Footer = () => {
                     <div className="container_color_footer_About">
                         <h1 className="container_color_footer_h1">Contact Us</h1>
                        <div className="Icons_row">
-                       <i class="fas fa-phone-volume "></i>
+                       <i className="fas fa-phone-volume "></i>
                         <span className="router_all_icons">+91 999 38994 49</span>
                        </div>
 
@@ -90,11 +90,11 @@ const Footer = () => {
                         </span>
 
                         <span className="reutor_icons">
-                        <i class="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                         </span>
 
                         <span className="reutor_icons">
-                        <i class="fab fa-instagram-square"></i>
+                        <i className="fab fa-instagram-square"></i>
                         </span>
 
                     </div>

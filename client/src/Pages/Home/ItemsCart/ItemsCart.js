@@ -6,6 +6,7 @@ import Rating from "../../Rating/Rating"
 import { AddCart_Action } from "../../../redux/Action/Cart"
 import { AddLikeCartAction } from "../../../redux/Action/Like"
 import { useDispatch, useSelector } from "react-redux"
+import { ImageUrl, TheSlice } from '../../../Utils/Url'
 
 const ItemsCart = ({ checkPost }) => {
 
@@ -20,7 +21,7 @@ const ItemsCart = ({ checkPost }) => {
 
     // const chexk = likeCart.filter((vale)=> vale.id )
 
-  //  console.log('like', likeCart)
+    //  console.log('like', likeCart)
 
     // add to cart..... 
     const AddCartTO = (e, id) => {
@@ -42,7 +43,7 @@ const ItemsCart = ({ checkPost }) => {
         e.preventDefault()
 
         dispatch(AddLikeCartAction(id, qty))
-      // console.log('click heart... and id :', id)
+        // console.log('click heart... and id :', id)
     }
 
     return (
@@ -56,28 +57,18 @@ const ItemsCart = ({ checkPost }) => {
                         <CardGroup  >
                             <Card className="Add_Cart_Home Add_color_border_top">
 
-
-
-
-                               
-                                    <span onClick={(e) => Handlelile(e, post?._id)}>
-                                        <i className="fas fa-heart"></i>
-                                    </span>
-                            
-
-
-
-
-
+                                <span onClick={(e) => Handlelile(e, post?._id)}>
+                                    <i className="fas fa-heart"></i>
+                                </span>
 
                                 <Link className="" to={`/product/${post?._id}`}>
 
-                                    <Card.Img variant="top" src={`../${post?.image[0]}`} className="Add_Cart_Home_image Add_Cart_Home_image_add" />
+                                    <Card.Img variant="top" src={`${ImageUrl}${post.image}`} className="Add_Cart_Home_image Add_Cart_Home_image_add" />
                                 </Link>
-                                <span className="cart_body_Price_adxx"> kr {post?.prics}</span>
+                                <span className="cart_body_Price_adxx">{post?.prices} kr</span>
 
                                 <div className="cart_body_all Add_color_border">
-                                    <h1>{post?.name}</h1>
+                                    <h1>{TheSlice(post?.name)}</h1>
                                     <Rating value={post?.rating} />
 
                                     <div className="cart_body_Price_viws">
@@ -87,8 +78,8 @@ const ItemsCart = ({ checkPost }) => {
 
 
 
-                                        <button className="Add_router_food" onClick={(e) => AddCartTO(e, post?._id)}>
-                                            <i class="fas fa-plus" ></i>
+                                        <button className="Add_router_food" onClick={(e) => AddCartTO(e, post)}>
+                                            <i className="fas fa-plus" ></i>
                                         </button>
 
                                     </div>

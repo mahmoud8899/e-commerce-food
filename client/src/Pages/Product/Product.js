@@ -8,25 +8,13 @@ import Title from "../Title/Title"
 import Rating from "../Rating/Rating"
 import { format } from "timeago.js"
 import { AddCart_Action } from "../../redux/Action/Cart"
-const Product = ({ match ,history}) => {
+import { ImageUrl } from '../../Utils/Url'
+const Product = ({ match }) => {
 
 
-   
 
-      const [qty, setQty] = useState(1)
 
-    //  console.log(qty)
-
-/*
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-    
-*/
-    
-   
-
+    const [qty, setQty] = useState(1)
     // console.log(match)
     const productID = match.params.id
     const dispatch = useDispatch()
@@ -40,8 +28,8 @@ const Product = ({ match ,history}) => {
     const { userInfo } = userLogin
 
 
-    const commitID = useSelector((state)=>state.commitID)
-    const {success} =commitID
+    const commitID = useSelector((state) => state.commitID)
+    const { success } = commitID
 
 
 
@@ -52,12 +40,12 @@ const Product = ({ match ,history}) => {
             dispatch(product_IDAction(productID))
         }
 
-    }, [productID, dispatch,success])
+    }, [productID, dispatch, success])
 
 
 
 
-    
+
 
 
 
@@ -95,7 +83,7 @@ const Product = ({ match ,history}) => {
         }
 
 
-        
+
         setValidated(true);
 
     };
@@ -103,23 +91,17 @@ const Product = ({ match ,history}) => {
 
 
     // add to cart items.. 
-    const AddCart = (e)=>{
+    const AddCart = (e,productxp) => {
         e.preventDefault()
+        if (productID && qty) {
 
-      //  console.log('clidk')
-
-        if(productID && qty){
-
-            dispatch(AddCart_Action(productID, qty ))
-            console.log('id :', productID , 'qty:', qty)
+            dispatch(AddCart_Action(productxp, qty))
         }
-
-
-    
-
-
-
     }
+
+
+
+  
 
     return (
 
@@ -136,7 +118,7 @@ const Product = ({ match ,history}) => {
                         <div className="Back_Home">
                             <Link className="Back_Home_A" to={'/'}>
                                 Homepage
-                                <i class="fas fa-check"></i>
+                                <i className="fas fa-check"></i>
                             </Link>
                         </div>
 
@@ -147,35 +129,11 @@ const Product = ({ match ,history}) => {
 
                 <Row>
 
-
-
-
-
-
-                    <Col xs={4} md={3} lg={2}>
-
-                        <div className="product_Image_One">
-                            {productxp?.image?.map((img, ImgIndex) => (
-
-                                <div className="product_Image_left" key={ImgIndex}>
-                                    <Image src={`/${img}`} className="product_Image_left_Image" alt={img} onMouseOver={(e) => HandleImagSlider(e, img)} />
-                                </div>
-
-
-                            ))}
-                        </div>
-
-                    </Col>
-
-
-
                     <Col xs={8} md={9} lg={5}>
                         <div className="product_Image_One">
-                            {museOver ?
-                                <Image src={`/${museOver}`} className="product_Image_One_Image" alt="" />
-                                :
-                                <Image src={`/${productxp?.image?.[0]}`} className="product_Image_One_Image" alt="" />
-                            }
+
+                            <Image src={`${ImageUrl}${productxp?.image}`} className="product_Image_One_Image" alt="" />
+
 
                         </div>
 
@@ -225,14 +183,14 @@ const Product = ({ match ,history}) => {
 
                                     <div className="cart_body_Price_viws">
 
-                                        <span className="cart_body_Price">{productxp?.prics} Kr</span>
+                                        <span className="cart_body_Price">{productxp?.prices} Kr</span>
 
-                                        <button 
-                                        className="button_add_to_cart"
-                                        type="type"
-                                         disabled={productxp?.quantity === 0}
-                                         onClick={(e)=>AddCart(e)}
-                                         >
+                                        <button
+                                            className="button_add_to_cart"
+                                            type="type"
+                                            disabled={productxp?.quantity === 0}
+                                            onClick={(e) => AddCart(e,productxp)}
+                                        >
                                             Add To Cart
                                         </button>
 
@@ -279,7 +237,7 @@ const Product = ({ match ,history}) => {
                                 <div className="commentUser_star">
 
 
-                                    <Form validated={validated}  onSubmit={(e)=>HandleCommit(e)}>
+                                    <Form validated={validated} onSubmit={(e) => HandleCommit(e)}>
                                         <select
                                             className="input_selector_user"
                                             onChange={(e) => setRating(e.target.value)}
@@ -297,7 +255,7 @@ const Product = ({ match ,history}) => {
                                                 rows={3} required onChange={(e) => setCommit(e.target.value)}
                                                 placeholder="Commit here"
                                                 className="width_more"
-                                                style={{height: '60px'}}
+                                                style={{ height: '60px' }}
                                             />
                                         </Form.Group>
                                         <Form.Control.Feedback type="invalid">

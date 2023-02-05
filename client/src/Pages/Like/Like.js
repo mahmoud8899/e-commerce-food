@@ -68,7 +68,7 @@ const Like = ({ history }) => {
                             <Card.Text className="price_like">102.00 Kr</Card.Text>
 
                             <Card.Text className="add_cart_like" onClick={(e) => HandleAddCart(e, likeyou?.product)}>
-                                <i class="fas fa-plus" ></i>
+                                <i className="fas fa-plus" ></i>
                             </Card.Text>
 
                             <Card.Text className="Add_Remove_Like" onClick={(e) => HandlRemoveLike(e, likeyou?.product)}>

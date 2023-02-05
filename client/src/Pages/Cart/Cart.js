@@ -9,6 +9,7 @@ import Title from "../Title/Title"
 import { Add_timeAction } from "../../redux/Action/Cart"
 import { ShowCart_action } from "../../redux/Action/Post"
 import SliderFood from "../Home/SliderFood/SliderFood"
+import {ImageUrl} from '../../Utils/Url'
 
 const Cart = ({ history }) => {
 
@@ -165,7 +166,7 @@ const Cart = ({ history }) => {
                                             <span >{cartIndex}</span>
                                         </td>
                                         <td>
-                                            <Image src={`/${cart?.image}`} className="cart_Image_image" alt="" />
+                                            <Image src={`${ImageUrl}${cart?.image}`} className="cart_Image_image" alt="" />
 
                                         </td>
                                         <td>

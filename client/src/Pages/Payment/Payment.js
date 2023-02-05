@@ -7,6 +7,7 @@ import OrderPayment from "./OrderPayment/OrderPayment"
 import Title from "../Title/Title"
 import { useSelector } from "react-redux"
 import { useEffect, useState } from "react"
+import {ImageUrl} from '../../Utils/Url'
 const Payment = ({ history }) => {
 
 
@@ -46,8 +47,8 @@ const Payment = ({ history }) => {
 
                         <h1>Shopping Cart</h1>
                         <div>
-                            <Link to={'/'}> Homepage   <i class="fas fa-check"></i> </Link>
-                            / <Link to={`/cart`}>Cart Items<i class="fas fa-check"></i> </Link> /
+                            <Link to={'/'}> Homepage   <i className="fas fa-check"></i> </Link>
+                            / <Link to={`/cart`}>Cart Items<i className="fas fa-check"></i> </Link> /
                             <Link to={`/`}><span className="gold_shipping">My Shopping Cart</span></Link>
                         </div>
 
@@ -78,7 +79,7 @@ const Payment = ({ history }) => {
 
                             <div className="Payment_Credit_Image">
                                 <span className="router_first">c</span>
-                                <i class="far fa-credit-card"></i>
+                                <i className="far fa-credit-card"></i>
                                 <span className="check_cart_span">Debit / Credit Card</span>
                             </div>
 

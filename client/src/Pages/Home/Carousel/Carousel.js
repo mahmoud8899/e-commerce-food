@@ -4,20 +4,23 @@ import { Col, Row, Image } from "react-bootstrap"
 import { useEffect, useState } from "react"
 import { Fragment } from "react"
 import { Link } from "react-router-dom"
+import { ImageUrl } from '../../../Utils/Url'
 const CarouselItems = ({ post }) => {
 
     const [current, setCurrent] = useState(1)
     const maxcurrent = Number(10)
-  //  const [sliderPostAll, setSliderPostAll] = useState(null)
+
+
+
 
 
     const newFilerPost = post?.slice(current - 1, current)
     // console.log(newFilerPost)
-  //  console.log(post)
+    //  console.log(post)
 
 
 
-     
+
 
     useEffect(() => {
 
@@ -78,8 +81,8 @@ const CarouselItems = ({ post }) => {
                                 </Link>
 
                                 <div className="PRICE_content_Home">
-                                    <span>Price</span>
-                                    <span>{list?.prics} Kr</span>
+                                    <span>prices</span>
+                                    <span>{list?.prices} Kr</span>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +92,7 @@ const CarouselItems = ({ post }) => {
                     <Col xs={9} sm={12} md={6} lg={6} className="Home_Menu">
                         <div className="image_Home_image__div">
                             <Link className="add_link_all" to={`/product/${list?._id}`}>
-                                <Image src={`./${list?.image?.[0]}`} className="image_Home_image" alt="hello Image" />
+                                <Image src={`${ImageUrl}${list?.image}`} className="image_Home_image" alt="hello Image" />
                             </Link>
 
 

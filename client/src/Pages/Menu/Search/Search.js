@@ -12,7 +12,9 @@ const Search = ({ setSearchMessage }) => {
                     <Form className="form_class">
                         <Form.Group className="mb-3 search_menu" controlId="formBasicEmail">
                             <Form.Label className="Search_text">Search</Form.Label>
-                            <Form.Control type="email" placeholder="Search here good food" className="search_input" onChange={(e) => setSearchMessage(e.target.value)} />
+                            <Form.Control type="email" placeholder="Search here good food" className="search_input" 
+                            onChange={(e) => setSearchMessage(e.target.value)} 
+                            />
                             <div className="div_search">
                                 <i className="fas fa-search"></i>
                             </div>

@@ -173,7 +173,7 @@ export const singUp_action = (user) => async (dispatch) => {
     try {
         dispatch({ type: ADD_USER_LOADING })
 
-        const { data } = await axios.post(`/api/user/singup/`, user)
+        const { data } = await axios.post(`https://lattspis.online/api/user/create/`, user)
         dispatch({ type: ADD_USER_SUCESS, payload: data })
         localStorage.setItem('userInfo', JSON.stringify(data))
 
@@ -210,7 +210,7 @@ export const user_Login = (user) => async (dispatch) => {
     try {
         dispatch({ type: ADD_USER_LOADING })
 
-        const { data } = await axios.post(`/api/user/logoin/`, user)
+        const { data } = await axios.post(`https://lattspis.online/api/user/login/`, user)
         dispatch({ type: ADD_USER_SUCESS, payload: data })
         localStorage.setItem('userInfo', JSON.stringify(data))
 

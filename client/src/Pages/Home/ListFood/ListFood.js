@@ -10,7 +10,7 @@ const ListFood = ({ post, setSearchMessage }) => {
     const checfilet = post?.map((ux) => ux.sort)
     const newArray = [...new Set(checfilet)]
 
-    //  console.log('checfilet', newArray)
+     console.log('checfilet', newArray)
 
     // console.log(checkfilter)
 
@@ -36,10 +36,10 @@ const ListFood = ({ post, setSearchMessage }) => {
             <p className="list_food_first">Explore Our Menu... <span className="All_list_menu" onClick={()=>setSearchMessage('')}>All Menu</span></p>
             
                 {newArray?.map((loop, loopIndex) => (
-                    <Col xs={6} md={4} lg={2} className="chhld">
+                    <Col xs={6} md={4} lg={2} className="chhld" key={loopIndex}>
                         <div className="List_Food_list">
                             <ul className="List_Food_All" >
-                                <li key={loopIndex} onClick={(e) => HandleClick(e, loop)}>{loop}</li>
+                                <li  onClick={(e) => HandleClick(e, loop)}>{loop}</li>
                             </ul>
 
                         </div>

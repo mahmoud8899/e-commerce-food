@@ -12,7 +12,7 @@ const BestFood = () => {
                 <h1>Why Choose us ?</h1>
                 <Col xs={6} md={3} lo={3}>
                     <div className="Food_fresh ">
-                        <i class="fas fa-lemon"></i>
+                        <i className="fas fa-lemon"></i>
                         <h1>Fresh Food</h1>
                         <span>
                             Best Cooks And Best Delivery Guys All At Your Service

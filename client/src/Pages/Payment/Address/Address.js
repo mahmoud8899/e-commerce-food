@@ -135,7 +135,7 @@ const Address = ({ShippingAdress}) => {
                         <div className="check_user_agree">
                             <span className="router_first_Adress">A</span>
                             <span className="router_login">Login</span>
-                            <i class="fas fa-check"></i>
+                            <i className="fas fa-check"></i>
                         </div>
 
 

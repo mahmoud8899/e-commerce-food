@@ -46,17 +46,15 @@ export const RemoveCart_Action = (id)=> async (dispatch,getStat)=>{
 
 
 // add cart save in loacastorage..
-export const AddCart_Action = (id, qty) => async (dispatch, getStat) => {
+export const AddCart_Action = (data, qty) => async (dispatch, getStat) => {
 
-    const { data } = await axios.get(`/api/post/post/${id}/`)
     dispatch({
         type: CART_ADD_ITEMS,
         payload: {
-            product: data._id,
+            product: data?._id,
             name: data.name,
-            image: data.image[0],
-            prics: data.prics,
-            quantity : data.quantity,
+            image: data.image,
+            prics: data.prices,
             qty
         }
     })

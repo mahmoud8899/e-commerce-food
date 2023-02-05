@@ -1,7 +1,6 @@
 import Carousel from "./Carousel/Carousel"
 import ListFood from "./ListFood/ListFood"
 import ItemsCart from "./ItemsCart/ItemsCart"
-import "./Home.css"
 import SliderSingUp from "./SliderSingUp/SliderSingUp"
 import BestFood from "./BestFood/BestFood"
 import SliderFood from "./SliderFood/SliderFood"
@@ -41,7 +40,7 @@ const Home = () => {
 
 
     // this is filter to menay .... 
-    const checkPost = post?.filter((val) => val?.sort?.toLowerCase().includes(searchMessage?.toLowerCase()))
+    // const checkPost = post?.filter((val) => val?.sort?.toLowerCase().includes(searchMessage?.toLowerCase()))
 
 
 
@@ -77,12 +76,9 @@ const Home = () => {
 
                     <Search setSearchMessage={setSearchMessage} />
 
-                    <ListFood
-                        post={post}
-                        setSearchMessage={setSearchMessage}
-                    />
+                   
                     <ItemsCart
-                        checkPost={checkPost}
+                        checkPost={post}
 
                     />
 

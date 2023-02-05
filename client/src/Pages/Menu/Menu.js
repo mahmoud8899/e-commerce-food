@@ -1,5 +1,3 @@
-
-import ListFood from "../Home/ListFood/ListFood"
 import { useSelector, useDispatch } from "react-redux"
 import React, { useEffect, useState } from "react"
 import { ShowCart_action } from "../../redux/Action/Post"
@@ -23,12 +21,22 @@ const Menu = () => {
     const postID = useSelector((state) => state.postID)
     const { post } = postID
 
-    // this is filter to menay .... 
-    const checkPost = post?.filter((val) => val.sort.toLowerCase().includes(searchMessage.toLowerCase()))
+
 
     useEffect(() => {
-        dispatch(ShowCart_action())
-    }, [dispatch])
+
+
+        if (post?.length === Number(0)) return dispatch(ShowCart_action())
+
+
+    }, [post?.length])
+
+
+
+
+
+
+    // console.log('post',post)
 
     return (
         <Container>
@@ -38,7 +46,7 @@ const Menu = () => {
 
                     <h1 >Menu</h1>
                     <div className="menu_home">
-                        <Link className="Class_Home" to={'/'}> Homepage   <i class="fas fa-check"></i> </Link>
+                        <Link className="Class_Home" to={'/'}> Homepage   <i className="fas fa-check"></i> </Link>
                     </div>
 
                 </Col>
@@ -48,13 +56,12 @@ const Menu = () => {
             <Search setSearchMessage={setSearchMessage} />
 
 
+           
 
-            <ListFood post={post}
-                setSearchMessage={setSearchMessage}
+
+            <ItemsCart
+                checkPost={post}
             />
-
-
-            <ItemsCart checkPost={checkPost} />
 
 
 

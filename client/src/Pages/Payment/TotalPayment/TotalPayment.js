@@ -2,6 +2,7 @@ import { Col, Image } from "react-bootstrap"
 import {RemoveCart_Action} from "../../../redux/Action/Cart"
 import {useDispatch ,useSelector} from "react-redux"
 import { useEffect } from "react"
+import {ImageUrl} from '../../../Utils/Url'
 const TotalPayment = ({setTotalPrics}) => {
 
     
@@ -41,7 +42,7 @@ const TotalPayment = ({setTotalPrics}) => {
 
                 {cartItems?.map((cart, cartIndex) => (
                     <div className="List_Oder_Image_with_price" key={cartIndex}>
-                        <Image src={`/${cart?.image}`} alt="first order" className="Oder_Image_allt" />
+                        <Image src={`${ImageUrl}${cart?.image}`} alt="first order" className="Oder_Image_allt" />
                         <span className="price_and_text">
                             {cart?.name}
 

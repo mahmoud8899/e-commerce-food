@@ -81,10 +81,10 @@ export const addCommit_Action = (user) => async (dispatch, getState) => {
 
 // show post id  
 export const product_IDAction = (id) => async (dispatch) => {
-    try {
-        //dispatch({ type: ADD_POST_ID_LOADING })
 
-        const { data } = await axios.get(`/api/post/post/${id}`)
+    console.log('id',id)
+    try {
+        const { data } = await axios.get(`https://lattspis.online/api/product/product/details/${id}`)
         dispatch({ type: ADD_POST_ID_SUCCESS, payload: data })
     } catch (error) {
         dispatch({
@@ -103,7 +103,7 @@ export const ShowCart_action = () => async (dispatch) => {
     try {
        // dispatch({ type: ADD_POST_LOADING })
 
-        const { data } = await axios.get(`/api/post/post/`)
+        const { data } = await axios.get(`https://lattspis.online/api/product/product/top/`)
         dispatch({ type: ADD_POST_SUCCESS, payload: data })
     } catch (error) {
         dispatch({

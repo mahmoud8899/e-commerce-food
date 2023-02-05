@@ -103,7 +103,7 @@ const Order = ({ match }) => {
 
                         <h1 className="my_addres_info_bil">
 
-                            <i class="fas fa-map-marked-alt"></i>
+                            <i className="fas fa-map-marked-alt"></i>
                             My Address
                         </h1>
 
